@@ -1,4 +1,4 @@
-## <b>Tutorials</b>
+## Tutorials
 
 The Jupyter Notebook tutorials are intended to help learn concepts relevant to the driver video challenge competition. They can also be a good review for anyone who has had experience working with video data or driver video data in the past.
 
