@@ -1,0 +1,5 @@
+## About Data
+
+The SHRP 2 dataset was collected as part of the Naturalistic Driving Study (NDS) and contains millions of hours and petabytes of driver video data that can be used by researchers to gain a better understanding about the underlying causes of car crashes.
+
+The dataset consists of both high- and low-resolution driver video data prepared by Oak Ridge National Laboratory for this Driver Video Privacy Task. The data were captured using the same data acquisition system as the larger SHRP2 dataset mentioned above, which currently has limited access in a secure enclave. For the data in this Task, there are drivers in choreographed situations designed to emulate different naturalistic driving environments. Actions include talking, coughing, singing, dancing, waving, eating, and various others [8]. Through this unique partnership, annotated data from Oak Ridge National Laboratory will be available to registered participants, alongside experts from the data collection and processing team who will be available for mentoring and any questions. 
