@@ -111,14 +111,14 @@
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="intro.html">
-   Getting Started
+   Why do some drivers crash?
   </a>
  </li>
 </ul>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="aboutdata.html">
-   About Data
+   About the Data
   </a>
  </li>
  <li class="toctree-l1 current active has-children">
@@ -286,15 +286,14 @@
               <div>
                  <div class="section" id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
-<p>This notebook is intended to be used as an introduction to <b>OpenCV</b> as well as other Python libraries that will help you navigate through this task. If you are unfamiliar with the task it is recommended to spend some time looking through our <a class="reference external" href="https://github.com/WestBigDataHub/videoprivacytask">github</a> site to familiarize yourself before working through this notebook.</p>
-<p>Any links contained in this notebook are intended to help you understand more about the highlighted topic and it is recommended to take time to read about any topics you may not understand while working through the notebook.</p>
+<p>This notebook is intended to be used as an introduction to <b>OpenCV</b> as well as other Python libraries that will be useful for navigating through this task. It is recommended to spend some time looking through our <a class="reference external" href="https://github.com/WestBigDataHub/videoprivacytask">github</a> site before working through this notebook.</p>
 <div class="section" id="jupyter-notebooks">
 <h2>Jupyter Notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permalink to this headline">¶</a></h2>
-<p>If you are interested in setting up a similar notebook environment locally you should follow the steps on our github site under the Tutorials section. This can be useful for downloading some of our notebooks as well as setting up a more interactive environment to work through your own implementation.</p>
+<p>To set up a similar environment locally follow the steps on our GitHub site under the Tutorials section. This can be useful for downloading some of our notebooks as well as setting up a more interactive environment for working through the notebooks.</p>
 </div>
 <div class="section" id="what-is-opencv">
 <h2>What is OpenCV<a class="headerlink" href="#what-is-opencv" title="Permalink to this headline">¶</a></h2>
-<p>OpenCV is a popular open-source computer vision library originally developed in C/C++ with a stable Python release being introduced in 2009. <a class="reference external" href="https://machinelearningmastery.com/what-is-computer-vision/">Computer Vision</a> is simply a field that is concerned with developing techniques to help computers analyze and understand the content contained in an image or video through the use of algorithms.</p>
+<p>OpenCV is a popular open-source computer vision library originally developed in C/C++ with a stable Python release being introduced in 2009. <a class="reference external" href="https://machinelearningmastery.com/what-is-computer-vision/">Computer Vision</a> includes the development of techniques to help computers analyze and understand the content contained in an image or video through the use of algorithms.</p>
 </div>
 <div class="section" id="imports">
 <h2>Imports<a class="headerlink" href="#imports" title="Permalink to this headline">¶</a></h2>
@@ -327,7 +326,7 @@
 </div>
 </div>
 </div>
-<p>Notice how the output from this function is a multi-dimensional array encoding of pixel values contained in the image. We can use the below function to assign our image to a variable <b>img</b>. The image we are using in the example below comes directly from our <a class="reference external" href="https://github.com/WestBigDataHub/videoprivacytask/tree/master/data">dataset</a> that we are using in this task.</p>
+<p>Notice how the output from this function is a multi-dimensional array encoding of pixel values contained in the image. We can use the below function to assign our image to a variable <b>img</b>. The image we are using in the example below comes directly from the <a class="reference external" href="https://github.com/WestBigDataHub/videoprivacytask/tree/master/data">dataset</a> for this task.</p>
 <p><b>NOTE</b> - When we display images in this notebook we use plt.imshow but when working outside a jupyter notebook using opencv.imshow will open a window containing the image</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -354,7 +353,7 @@
 </div>
 </div>
 </div>
-<p>The shorthand for doing this color conversion in openCV is shown below and is much easier to use once you understand the basic concept above</p>
+<p>The shorthand for doing this color conversion in openCV is shown below.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">opencv_merged</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
@@ -395,7 +394,7 @@ h = 194 <br></p>
 </div>
 <div class="section" id="video-loop">
 <h2>Video Loop<a class="headerlink" href="#video-loop" title="Permalink to this headline">¶</a></h2>
-<p>Now that we have seen the above example we will look at a loop that reads in a single video and goes through each frame, capturing the corresponding face from each. This basic structure is something that you should use throughout the task for analyzing video.</p>
+<p>Now that we have seen the above example we will look at a loop that reads in a single video and goes through each frame, capturing the corresponding face from each. This basic structure is something that can be used throughout the task for analyzing video</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> <span class="c1"># This library can be useful for reading in the coordinates for RetinaFace csv files</span>
@@ -445,8 +444,8 @@ h = 194 <br></p>
 </div>
 <div class="section" id="more-materials">
 <h2>More Materials<a class="headerlink" href="#more-materials" title="Permalink to this headline">¶</a></h2>
-<p>If you found this tutorial helpful and want to learn more about openCV usage <a class="reference external" href="https://medium.com/analytics-vidhya/introduction-to-opencv-cc771730577a">this</a> link will be helpful. It contains a collection of 4 notebooks (the material in the first one has been covered here) that are useful in learning the basics of image processing, features in computer vision and cascade classification.</p>
-<p>If you are interested in some more openCV tutorials these can be found <a class="reference external" href="https://docs.opencv.org/4.5.2/d6/d00/tutorial_py_root.html">here</a>. These tutorials have a broader range in topics and can be a good reference when learning what openCV can do.</p>
+<p>To learn more about openCV usage <a class="reference external" href="https://medium.com/analytics-vidhya/introduction-to-opencv-cc771730577a">this</a> link will be helpful. It contains a collection of 4 notebooks (the material in the first one has been covered here) that are useful in learning the basics of image processing, features in computer vision and cascade classification.</p>
+<p>More openCV tutorials can be found <a class="reference external" href="https://docs.opencv.org/4.5.2/d6/d00/tutorial_py_root.html">here</a>. These tutorials have a broader range in topics and can be a good reference when learning what openCV can do.</p>
 </div>
 </div>
 
