@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tutorials</title>
+    <title>Competition in a Nutshell</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -54,8 +54,8 @@
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Introduction" href="getting_started.html" />
-    <link rel="prev" title="Competition in a Nutshell" href="aboutcompetition.html" /> 
+    <link rel="next" title="Tutorials" href="tutorials.html" />
+    <link rel="prev" title="" href="intro.html" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
       
@@ -115,16 +115,16 @@
  </li>
 </ul>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="aboutcompetition.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Competition in a Nutshell
   </a>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="tutorials.html">
    Tutorials
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
@@ -188,7 +188,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/tutorials.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/aboutcompetition.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -226,6 +226,24 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#about-the-data">
+   About the Data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#evaluation-process">
+   Evaluation Process
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -233,36 +251,16 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
         
               <div>
-                 <div class="section" id="tutorials">
-<h1>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h1>
-<p>The Jupyter Notebook tutorials are intended to help learn concepts relevant to the driver video challenge competition. They can also be a good review for anyone who has had experience working with video data or driver video data in the past.</p>
-<p>More notebooks will be added throughout the competition. The sections below will explain how to run the jupyter notebooks although it is recommended to use the provided JupyterHub links which allow the notebooks to be run in your browser without additional setup. It is also an option to set up Jupyter locally which is explained on the GitHub Page.</p>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 full-width docutils">
-<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-2 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-2 sd-g-lg-2 docutils">
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Getting Started</div>
-<img src="_static/getting_started.jpg" alt="logo" loading="lazy" style="max-width: 100%; max-height: 200px; margin-top: 1rem;" />
+                 <div class="section" id="competition-in-a-nutshell">
+<h1>Competition in a Nutshell<a class="headerlink" href="#competition-in-a-nutshell" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="about-the-data">
+<h2>About the Data<a class="headerlink" href="#about-the-data" title="Permalink to this headline">¶</a></h2>
+<p>The dataset consists of both high- and low-resolution driver video data prepared by Oak Ridge National Laboratory for this Driver Video Privacy Task. The data for this competition were gathered using the same data acquisition system as the much larger SHRP2 dataset which currently has limited access in a secure enclave. The SHRP 2 dataset was collected as part of the Naturalistic Driving Study (NDS) and contains millions of hours and petabytes of driver video data that can be used by researchers to gain a better understanding about the underlying causes of car crashes. For the data in this Task, there are 10 drivers in choreographed situations designed to emulate different naturalistic driving environments. Actions include talking, coughing, singing, dancing, waving, eating, and various others.</p>
 </div>
-<div class="sd-card-footer docutils">
-<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-0 sd-ml-0 sd-mr-0 sd-pt-0 sd-pb-0 sd-pl-0 sd-pr-0 docutils">
-<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
-<div class="sd-col sd-d-flex-row sd-align-major-start sd-fs-5 docutils">
-<p class="sd-card-text"><a class="sd-sphinx-override sd-badge sd-bg-secondary sd-bg-text-secondary reference external" href="getting_started.html"><span>demo</span></a>
-<a class="sd-sphinx-override sd-badge sd-bg-secondary sd-bg-text-secondary reference external" href="https://github.com/WestBigDataHub/videoprivacytask/tree/master/tutorials"><span>repo</span></a></p>
-</div>
-<div class="sd-col sd-d-flex-row sd-align-major-end docutils">
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="toctree-wrapper compound">
+<div class="section" id="evaluation-process">
+<h2>Evaluation Process<a class="headerlink" href="#evaluation-process" title="Permalink to this headline">¶</a></h2>
+<p>The evaluation process includes a preliminary automated evaluation as well as a human evaluation, to assess the de-identification of faces and measure the consistency in preserving driver actions and emotions. An initial automated process will be run using a deep learning-based gaze estimator. The difference in predicted gaze-vectors from the original un-filtered video and de-identified video will be used as an initial score. Human evaluators will then use a method as described <a class="reference external" href="https://www.osti.gov/biblio/1399436">here</a> to produce another score.</p>
+<p>The scores for each of these areas will be combined for an overall assessment, prioritizing the human assessment of de-identification. PLEASE NOTE that this Task is heavily reliant on human evaluation, and we encourage participants to include in their submission any ideas, methods, and results from their own evaluation approaches. The participants’ descriptions of methodology, assumptions, and results will be shared with reviewers and the project organizers for additional discussion and opportunities for seed funding for further research.</p>
 </div>
 </div>
 
@@ -299,19 +297,19 @@ Getting Started</div>
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="aboutcompetition.html" title="previous page">
+        <a class="left-prev" href="intro.html" title="previous page">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Competition in a Nutshell</p>
+                <p class="prevnext-title"></p>
             </div>
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="getting_started.html" title="next page">
+        <a class="right-next" href="tutorials.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Introduction</p>
+                <p class="prevnext-title">Tutorials</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>
