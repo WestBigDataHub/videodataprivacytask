@@ -1,0 +1,832 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Identification Measurement Notebook</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.d53ab927f7bad3eaa42da95908504b10.min.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="_static/design-tabs.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Gallery of Project Submissions" href="gallery.html" />
+    <link rel="prev" title="Introduction" href="getting_started.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/logo2.jpg" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="aboutcompetition.html">
+   Competition in a Nutshell
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="tutorials.html">
+   Tutorials
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="getting_started.html">
+     Introduction
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Identification Measurement Notebook
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="gallery.html">
+   Gallery of Project Submissions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="about.html">
+   About Us
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/identification_measurement.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/WestBigDataHub/videodataprivacytask"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/WestBigDataHub/videodataprivacytask/main?urlpath=tree/identification_measurement.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#libraries-to-import">
+   Libraries to import
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-submissions">
+   Example Submissions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pixelate-image">
+   Pixelate Image
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sharpening-and-applying-averaging-kernel">
+   Sharpening and Applying Averaging Kernel
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#median-blurring">
+   Median Blurring
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#putting-it-all-together">
+   Putting it all together
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#scikit-learn-library">
+   Scikit Learn Library
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#principal-component-analysis-pca">
+   Principal Component Analysis (PCA)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sparse-pca">
+   Sparse PCA
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                 <div class="section" id="identification-measurement-notebook">
+<h1>Identification Measurement Notebook<a class="headerlink" href="#identification-measurement-notebook" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>The goal of this notebook is to explore a potential judging method which computes errors on a video-by-video basis using the follow methodology:</p>
+<ol class="simple">
+<li><p>Find principal components of original video</p></li>
+<li><p>Project the original video and de-identified video onto the subspace spanned by the principal components</p></li>
+<li><p>Compute the distance between the (projected) original and de-identified videos</p></li>
+</ol>
+<p>If the above concepts are confusing don’t worry as they will be explored more in depth later on in this notebook. This method is not intended to be used for de-identifying video but rather to explore a method by which the de-identified videos can be compared against the original video.</p>
+<p><b>NOTE:</b> This method will not necessarily be used in the actual judging process for this competition</p>
+</div>
+<div class="section" id="libraries-to-import">
+<h2>Libraries to import<a class="headerlink" href="#libraries-to-import" title="Permalink to this headline">¶</a></h2>
+<p>For this notebook the following libraries will be used: numpy, pandas and opencv. If any of these libraries sound unfamiliar it is recommended to review the first Jupyter Notebook tutorial (Getting Started) which can be found <a class="reference external" href="https://westbigdatahub.github.io/videodataprivacytask/tutorials.html">here</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">cv2</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>These two global variables reference a video from the “Level 1” folder which contains a short driver video containing the Dance/Sing action. The referenced csv file simply provides face detection coordinates computed using <a class="reference external" href="https://pythonrepo.com/repo/serengil-retinaface-python-deep-learning#:%7E:text=RetinaFace%20is%20a%20deep%20learning,is%20published%20by%20Stanislas%20Bertrand.">RetinaFace</a> which is a deep learning based cutting-edge facial detector for Python coming with facial landmarks. The referenced landmarks are stored in this csv file which corresponds to the video that will be analyzed.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Global variables</span>
+
+<span class="n">video_path</span> <span class="o">=</span> <span class="s2">&quot;Video/Easy/T002_ActionsShorter_mini_11552_12166_Dance-Sing.mp4&quot;</span>
+<span class="n">retina_csv_path</span> <span class="o">=</span> <span class="s2">&quot;RetinaFaceDetections/Easy/T002_ActionsShorter_mini_11552_12166_Dance-Sing.csv&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The following code block simply reads in the x, y, w, h coordinates from the RetinaFace csv file and stores the coordinates in a pandas dataframe with each row corresponding to a separate frame in the video.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">returnRetinaDf</span><span class="p">(</span><span class="n">retina_csv_path</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Read retina detections csv file into dataframe</span>
+<span class="sd">    </span>
+<span class="sd">    Input: file path to csv</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">retina_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">retina_csv_path</span><span class="p">)</span>
+    <span class="n">retina_df</span> <span class="o">=</span> <span class="n">retina_df</span><span class="p">[[</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="s2">&quot;h&quot;</span><span class="p">]]</span>
+    <span class="k">return</span> <span class="n">retina_df</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">retina_df</span> <span class="o">=</span> <span class="n">returnRetinaDf</span><span class="p">(</span><span class="n">retina_csv_path</span><span class="p">)</span>
+<span class="n">retina_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="example-submissions">
+<h2>Example Submissions<a class="headerlink" href="#example-submissions" title="Permalink to this headline">¶</a></h2>
+<p>As mentioned above, this particular notebook tutorial requires some basic example submissions in order to test against the original video. The following methods are being used: 1) pixelate, 2) sharpen_avg, 3) median_avg. Each of these methods are explored more in depth below.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># example submission </span>
+<span class="k">def</span> <span class="nf">pixelate</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">size</span><span class="p">):</span>
+    <span class="n">height</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
+    <span class="n">w</span><span class="p">,</span> <span class="n">h</span> <span class="o">=</span> <span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="n">size</span><span class="p">)</span>
+    <span class="n">temp</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="n">h</span><span class="p">),</span> <span class="n">interpolation</span><span class="o">=</span><span class="n">cv2</span><span class="o">.</span><span class="n">INTER_LINEAR</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">temp</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span> <span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">),</span> <span class="n">interpolation</span><span class="o">=</span><span class="n">cv2</span><span class="o">.</span><span class="n">INTER_NEAREST</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">output</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># example submission</span>
+<span class="k">def</span> <span class="nf">sharpen_avg</span><span class="p">(</span><span class="n">img</span><span class="p">):</span>
+    <span class="c1"># sharpening filter</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">addWeighted</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">blur</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">30</span><span class="p">)),</span> <span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">128</span><span class="p">)</span>
+    <span class="c1"># averaging kernel; apply vertical kernel, then horizontal kernel</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">blur</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">blur</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">img</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># example submissions</span>
+<span class="k">def</span> <span class="nf">median_avg</span><span class="p">(</span><span class="n">img</span><span class="p">):</span>
+    <span class="c1"># median avg filter</span>
+    <span class="k">return</span> <span class="n">cv2</span><span class="o">.</span><span class="n">medianBlur</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="mi">27</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now that the 3 example submission masking techniques have been defined, we will test each method on a singular frame of the video as a sanity check to make sure everything works as intended and to help visualize each of the above masking methods.</p>
+<p>As mentioned in the Getting Started notebook, we need to use plt.imshow to display images but when working outside of a jupyter notebook the opencv library provides a function (opencv.imshow) that can be used to open a window containing the image. Because openCV stores images in BGR format, the image must also be converted to the standard RGB color space so that it is displayed in matplotlib with the proper color scheme.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Get first frame from sample video</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="n">cap</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">VideoCapture</span><span class="p">(</span><span class="n">video_path</span><span class="p">)</span>
+<span class="n">success</span><span class="p">,</span> <span class="n">image</span> <span class="o">=</span> <span class="n">cap</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+<span class="k">if</span> <span class="n">success</span><span class="p">:</span>
+    <span class="n">b</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">r</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+    <span class="n">image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">merge</span><span class="p">([</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">])</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="pixelate-image">
+<h2>Pixelate Image<a class="headerlink" href="#pixelate-image" title="Permalink to this headline">¶</a></h2>
+<p>For the pixelate function, we will walk through the code step by step since it is not using a opencv defined function but rather a clever use of multiple resize operations.</p>
+<ol class="simple">
+<li><p>First, we get the input image size, which in this case is 480X480 (computed using image.shape)</p></li>
+<li><p>Next, we decide on a desired “pixelated size”</p></li>
+<li><p>The image is then resized to the desired pixelated size using <a class="reference external" href="https://theailearner.com/2018/12/29/image-processing-bilinear-interpolation/">bilinear interpolation</a></p></li>
+<li><p>Finally, the image is then reesized back to the output size using <a class="reference external" href="https://www.imageeprocessing.com/2017/11/nearest-neighbor-interpolation.html">nearest neighbor interpolation</a>. It is recommended to read the linked article if you are unfamiliar with this interpolation method to understand how the pixelated look is retained even though the image is being resized back to the original size.</p></li>
+</ol>
+<p>After the above steps have been performed, we have an input image that has been pixelated while retaining the original image size.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Get image height and width</span>
+<span class="n">height</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
+
+<span class="c1"># Set w and h values to our desired resize value (this is intered in the pixelate method as parameter &quot;size&quot;)</span>
+<span class="n">w</span><span class="p">,</span> <span class="n">h</span> <span class="o">=</span> <span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
+
+<span class="c1"># Display temp image</span>
+<span class="n">temp</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="n">h</span><span class="p">),</span> <span class="n">interpolation</span><span class="o">=</span><span class="n">cv2</span><span class="o">.</span><span class="n">INTER_LINEAR</span><span class="p">)</span>
+
+<span class="c1"># Convert the pixelated image back to the original size</span>
+<span class="n">output</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span> <span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">),</span> <span class="n">interpolation</span><span class="o">=</span><span class="n">cv2</span><span class="o">.</span><span class="n">INTER_NEAREST</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Below, we display the temp image which represents the 16x16 pixelated image</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
+<span class="n">temp</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Here, the final output image is displayed. Notice how this image looks identitical to the 16x16 pixelated image but has the original input image shape.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+<span class="n">output</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="sharpening-and-applying-averaging-kernel">
+<h2>Sharpening and Applying Averaging Kernel<a class="headerlink" href="#sharpening-and-applying-averaging-kernel" title="Permalink to this headline">¶</a></h2>
+<p>Here, we are first applying a sharpening filter to the image and then applying both a vertical and horizontal averaging kernel to the image. The code block below will show the image at various points in this process but it is recommended to read <a class="reference external" href="https://www.analyticsvidhya.com/blog/2021/08/sharpening-an-image-using-opencv-library-in-python/">this</a> article to get a better understanding of how this process actually works to mask the image.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># sharpening filter</span>
+<span class="n">sharpen</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">addWeighted</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">blur</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">30</span><span class="p">)),</span> <span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">128</span><span class="p">)</span>
+
+<span class="c1"># averaging kernel; apply vertical kernel, then horizontal kernel</span>
+<span class="n">output</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">blur</span><span class="p">(</span><span class="n">sharpen</span><span class="p">,</span> <span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+<span class="n">output</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">blur</span><span class="p">(</span><span class="n">sharpen</span><span class="p">,</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">sharpen</span><span class="p">)</span>
+<span class="n">sharpen</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+<span class="n">output</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="median-blurring">
+<h2>Median Blurring<a class="headerlink" href="#median-blurring" title="Permalink to this headline">¶</a></h2>
+<p>This method takes a median of all the pixels under the kernel area and replaces the central element and can be implemented in python by simply using the cv2.medianBlur function. <a class="reference external" href="https://theailearner.com/tag/cv2-medianblur/">This</a> article should help clarify and questions about how median blur and other similar smoothing filters actually work and also shows how to implement them in python.</p>
+<p>Notice that this method produces a blurred version of the original image and is a reasonable masking technique to use as a third example submission.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">output</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">medianBlur</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="mi">27</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+<span class="n">output</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="putting-it-all-together">
+<h2>Putting it all together<a class="headerlink" href="#putting-it-all-together" title="Permalink to this headline">¶</a></h2>
+<p>Now that we have defined our 3 masking techniques and tested them on a singular video frame we need to create a function that will iterate through all the frames in the input video, applying the masking techniques at each frame. Once the masking techniques are applied at each frame, the below function will then append each transformed frame to an output matrix (one for each masking technique) where each matrix contains all the frames for the entire video.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">returnDataMatrix</span><span class="p">(</span><span class="n">video_path</span><span class="p">):</span>
+    
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Takes in video path and returns data matrix</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    
+    <span class="n">cap</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">VideoCapture</span><span class="p">(</span><span class="n">video_path</span><span class="p">)</span>
+    <span class="n">frame_counter</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="n">data_matrix</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="c1">##### Remove this ##################################################################</span>
+    <span class="n">pixelated_matrix</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">sharpen_blur_matrix</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">median_matrix</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1">###################################################################################</span>
+
+    <span class="k">while</span> <span class="n">cap</span><span class="o">.</span><span class="n">isOpened</span><span class="p">():</span>
+
+        <span class="n">ret</span><span class="p">,</span><span class="n">frame</span> <span class="o">=</span> <span class="n">cap</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">frame</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">break</span>
+
+
+        <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">retina_df</span><span class="p">[</span><span class="s2">&quot;x&quot;</span><span class="p">][</span><span class="n">frame_counter</span><span class="p">])</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">retina_df</span><span class="p">[</span><span class="s2">&quot;y&quot;</span><span class="p">][</span><span class="n">frame_counter</span><span class="p">])</span>
+        <span class="n">l</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">retina_df</span><span class="p">[</span><span class="s2">&quot;w&quot;</span><span class="p">][</span><span class="n">frame_counter</span><span class="p">]),</span> <span class="nb">int</span><span class="p">(</span><span class="n">retina_df</span><span class="p">[</span><span class="s2">&quot;h&quot;</span><span class="p">][</span><span class="n">frame_counter</span><span class="p">]))</span>
+
+        <span class="n">frame</span> <span class="o">=</span> <span class="n">frame</span><span class="p">[</span><span class="n">y</span><span class="p">:</span><span class="n">y</span> <span class="o">+</span> <span class="n">l</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="n">l</span><span class="p">]</span>
+        <span class="n">frame</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="p">(</span><span class="mi">224</span><span class="p">,</span> <span class="mi">224</span><span class="p">),</span> <span class="n">interpolation</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">INTER_AREA</span><span class="p">)</span>
+        
+        <span class="c1">##### Remove this #############################################################################</span>
+        <span class="n">pixelated_frame</span> <span class="o">=</span> <span class="n">pixelate</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="mi">65</span><span class="p">)</span>
+        <span class="n">sharpen_blur_frame</span> <span class="o">=</span> <span class="n">sharpen_avg</span><span class="p">(</span><span class="n">frame</span><span class="p">)</span>
+        <span class="n">median_frame</span> <span class="o">=</span> <span class="n">median_avg</span><span class="p">(</span><span class="n">frame</span><span class="p">)</span>
+        <span class="c1">#cv2.imwrite(&quot;pixelated.jpg&quot;, pixelated_frame)</span>
+        <span class="c1">#cv2.imwrite(&quot;sharpen_blur.jpg&quot;, sharpen_blur_frame)</span>
+        <span class="c1">#cv2.imwrite(&quot;median.jpg&quot;, median_frame)</span>
+        <span class="c1">##############################################################################################</span>
+        
+        
+        <span class="n">frame</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2GRAY</span><span class="p">)</span>
+        <span class="n">frame</span> <span class="o">=</span> <span class="p">[</span><span class="n">j</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">frame</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">i</span><span class="p">]</span>
+        
+        <span class="c1">##### Remove this #############################################################################</span>
+        <span class="n">pixelated_frame</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">pixelated_frame</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2GRAY</span><span class="p">)</span>
+        <span class="c1">#cv2.imwrite(&quot;bw_pixelated.jpg&quot;, pixelated_frame)</span>
+        <span class="n">pixelated_frame</span> <span class="o">=</span> <span class="p">[</span><span class="n">j</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">pixelated_frame</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">i</span><span class="p">]</span>
+        
+        <span class="n">sharpen_blur_frame</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">sharpen_blur_frame</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2GRAY</span><span class="p">)</span>
+        <span class="c1">#cv2.imwrite(&quot;bw_sharpen_blur.jpg&quot;, sharpen_blur_frame)</span>
+        <span class="n">sharpen_blur_frame</span> <span class="o">=</span> <span class="p">[</span><span class="n">j</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">sharpen_blur_frame</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">i</span><span class="p">]</span>
+        
+        <span class="n">median_frame</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">median_frame</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2GRAY</span><span class="p">)</span>
+        <span class="c1">#cv2.imwrite(&quot;bw_median.jpg&quot;, median_frame)</span>
+        <span class="n">median_frame</span> <span class="o">=</span> <span class="p">[</span><span class="n">j</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">median_frame</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">i</span><span class="p">]</span>
+        <span class="c1">##############################################################################################</span>
+
+        <span class="n">data_matrix</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">frame</span><span class="p">)</span>
+        
+        <span class="c1">##### Remove this #############################################################################</span>
+        <span class="n">pixelated_matrix</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pixelated_frame</span><span class="p">)</span>
+        <span class="n">sharpen_blur_matrix</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sharpen_blur_frame</span><span class="p">)</span>
+        <span class="n">median_matrix</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">median_frame</span><span class="p">)</span>
+        <span class="c1">##############################################################################################</span>
+
+        <span class="n">frame_counter</span> <span class="o">+=</span> <span class="mi">1</span>
+
+
+    <span class="n">cap</span><span class="o">.</span><span class="n">release</span><span class="p">()</span>
+
+    <span class="n">data_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data_matrix</span><span class="p">)</span>
+    <span class="c1">#### Remove this ###########################</span>
+    <span class="n">pixelated_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">pixelated_matrix</span><span class="p">)</span>
+    <span class="n">sharpen_blur_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">sharpen_blur_matrix</span><span class="p">)</span>
+    <span class="n">median_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">median_matrix</span><span class="p">)</span>
+    <span class="c1">#######################################################</span>
+    <span class="k">return</span> <span class="n">data_matrix</span><span class="p">,</span> <span class="n">pixelated_matrix</span><span class="p">,</span> <span class="n">sharpen_blur_matrix</span><span class="p">,</span> <span class="n">median_matrix</span> <span class="c1"># change to: return data_matrix</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_matrix</span><span class="p">,</span> <span class="n">pixelated_matrix</span><span class="p">,</span> <span class="n">sharpen_blur_matrix</span><span class="p">,</span> <span class="n">median_matrix</span> <span class="o">=</span> <span class="n">returnDataMatrix</span><span class="p">(</span><span class="n">video_path</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_matrix</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pixelated_matrix</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sharpen_blur_matrix</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">median_matrix</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="scikit-learn-library">
+<h2>Scikit Learn Library<a class="headerlink" href="#scikit-learn-library" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://scikit-learn.org/stable/">Scikit learn</a> is a machine learning library in Python that can be used for classification, regerssion, clustering, dimensionality reduction, model selection and preprocessing.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">SparsePCA</span>
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">TruncatedSVD</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="principal-component-analysis-pca">
+<h2>Principal Component Analysis (PCA)<a class="headerlink" href="#principal-component-analysis-pca" title="Permalink to this headline">¶</a></h2>
+<p>Principal Component Analysis (PCA) is a linear dimensionality reduction technique that can be utilized for extracting information from a high-dimensional space by projecting it into a lower-dimensional sub-space. It tries to preserve the essential parts that have more variation of the data and remove the non-essential parts with fewer variation.</p>
+<p>The function below uses the sklearn library to perform Principal Component Analysis (PCA) and then computes the error between the original and de-identified videos. This function needs to be called for each of our matrices (i.e. pixelated matrix, sharpen matrix and median blur matrix) and we output the error below.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">pca_error</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">de_identified_matrix</span><span class="p">):</span>
+    
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    matrix: corresponds to original video</span>
+<span class="sd">    de_identified_matrix: correponds to de-identified video</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    
+    <span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="nb">min</span><span class="p">(</span><span class="n">matrix</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">matrix</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="n">svd_solver</span><span class="o">=</span><span class="s1">&#39;full&#39;</span><span class="p">)</span>
+    <span class="n">pca</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>
+    
+    <span class="n">dim_data_matrix</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>
+    <span class="n">dim_de_identified_matrix</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">de_identified_matrix</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">dim_de_identified_matrix</span> <span class="o">-</span> <span class="n">dim_data_matrix</span><span class="p">)</span>  
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;pixelated error: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">pca_error</span><span class="p">(</span><span class="n">data_matrix</span><span class="p">,</span> <span class="n">pixelated_matrix</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;sharpen blur error: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">pca_error</span><span class="p">(</span><span class="n">data_matrix</span><span class="p">,</span> <span class="n">sharpen_blur_matrix</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;median error: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">pca_error</span><span class="p">(</span><span class="n">data_matrix</span><span class="p">,</span> <span class="n">median_matrix</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="sparse-pca">
+<h2>Sparse PCA<a class="headerlink" href="#sparse-pca" title="Permalink to this headline">¶</a></h2>
+<p>One of the main disadvantages of ordinary PCA is that the principal components are usually linear combinations of all the input variables. Sparse PCA can help overcome this disadvantage by finding linear combinations that contain just a few input variables.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sparse_pca_error</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">matrix1</span><span class="p">,</span> <span class="n">matrix2</span><span class="p">,</span> <span class="n">matrix3</span><span class="p">):</span>
+    
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    matrix: corresponds to original video</span>
+<span class="sd">    matrix1, matrix2, matrix3, .... : correspond to de-identified videos</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    
+    <span class="n">svd</span> <span class="o">=</span> <span class="n">TruncatedSVD</span><span class="p">(</span><span class="n">n_components</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">matrix</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">matrix</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">*</span> <span class="mf">0.75</span><span class="p">))</span>
+    <span class="n">svd</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>
+    <span class="n">matrix</span> <span class="o">=</span> <span class="n">svd</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">matrix</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+    
+    <span class="n">sparse_pca</span> <span class="o">=</span> <span class="n">SparsePCA</span><span class="p">(</span><span class="n">n_components</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">1.5</span><span class="p">)</span>
+    <span class="n">sparse_pca</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>
+    <span class="n">dim_data_matrix</span> <span class="o">=</span> <span class="n">sparse_pca</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">compute_error</span><span class="p">(</span><span class="n">de_identified_matrix</span><span class="p">):</span>
+        
+        <span class="n">svd</span> <span class="o">=</span> <span class="n">TruncatedSVD</span><span class="p">(</span><span class="n">n_components</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">de_identified_matrix</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">de_identified_matrix</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">*</span> <span class="mf">0.75</span><span class="p">))</span>
+        <span class="n">svd</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">de_identified_matrix</span><span class="p">)</span>
+        <span class="n">de_identified_matrix</span> <span class="o">=</span> <span class="n">svd</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">de_identified_matrix</span><span class="p">)</span>
+        
+        <span class="n">dim_de_identified_matrix</span> <span class="o">=</span> <span class="n">sparse_pca</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">de_identified_matrix</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">dim_de_identified_matrix</span><span class="o">-</span><span class="n">dim_data_matrix</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">compute_error</span><span class="p">(</span><span class="n">matrix1</span><span class="p">),</span> <span class="n">compute_error</span><span class="p">(</span><span class="n">matrix2</span><span class="p">),</span> <span class="n">compute_error</span><span class="p">(</span><span class="n">matrix3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pixelated_error</span><span class="p">,</span> <span class="n">sharpen_blur_error</span><span class="p">,</span> <span class="n">median_error</span> <span class="o">=</span> <span class="n">sparse_pca_error</span><span class="p">(</span><span class="n">data_matrix</span><span class="p">,</span> <span class="n">pixelated_matrix</span><span class="p">,</span> <span class="n">sharpen_blur_matrix</span><span class="p">,</span> <span class="n">median_matrix</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;pixelated error: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">pixelated_error</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;sharpen blur error: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sharpen_blur_error</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;median error: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">median_error</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p>Hopefully the above example of using PCA to compare de-identified videos with the original videos provides some better intuition about what masking techniques may prove more effective than others as well as helping to showcase some more features of Python that may be useful in the competition. To get the full benefit of the notebook it is recommended to go back and read through any linked articles to gain a better understanding of all the concepts discussed.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+<div class="section">
+   
+</div>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="getting_started.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Introduction</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="gallery.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Gallery of Project Submissions</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The Jupyter Book Community<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
